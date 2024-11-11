@@ -1,0 +1,123 @@
+/* index.css */
+
+/* General Body Styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #ffffff; /* Very light grey-blue background for a soft look */
+  color: #333; /* Dark text for readability */
+}
+
+/* Header Styles */
+header {
+  padding: 20px; /* Padding for spacing */
+  text-align: center; /* Centered text */
+}
+
+header h1 {
+  font-size: 2rem; /* Larger font size for main title */
+  margin: 0; /* Remove default margin */
+  color: black; /* Dark blue-grey text for contrast against light background */
+}
+
+header h2 {
+  font-size: 1.25rem; /* Smaller font size for subheading */
+  color: #7f8c8d; /* Muted grey for subheading for softer contrast */
+}
+
+/* Navbar.css */
+.navbar {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  padding: 0.5px; /* Reduced padding for a thinner bar */
+}
+
+.navbar a {
+  color: black; /* White text for links */
+  text-decoration: none; /* Remove underline from links */
+  padding: 8px 15px; /* Padding around links */
+  border-radius: 5px; /* Rounded corners for links */
+  font-size: 14px; /* Smaller font size */
+  transition: background-color .3s ease; /* Smooth transition on hover */
+}
+
+.navbar a:hover {
+  background-color: #1a5276; /* Darker blue on hover for emphasis */
+}
+
+/* Menu Styles */
+.menu {
+  max-width: 1200px; /* Limit the width for better readability */
+  text-align: center; /* Center the menu content */
+  margin: auto; /* Center the menu horizontally */
+  padding: 20px; /* Padding around the menu container */
+}
+
+/* Menu Heading Styles */
+.menu h4 {
+  font-size: 2rem; /* Heading size for menu section */
+  color: #2980b9; /* Bright blue color for headings to add vibrancy */
+  text-align: center; /* Center align the heading */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* Pizza List Styles */
+.pizzas {
+  display: grid; /* Use CSS Grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid with minimum card width */
+  gap: 20px; /* Space between cards */
+}
+
+/* Pizza Card Styles */
+.pizza {
+  display: flex; /* Use flexbox for layout within the card */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background for pizza items */
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 12px; /* Subtle shadow for depth without harshness */
+}
+
+.pizza img {
+   width: 100%; /* Make image take full width of the card */
+   height: auto; /* Maintain aspect ratio of the image */
+   border-radius: 5px;
+   object-fit: cover; /* Cover ensures the image fills the space without distortion */
+   margin-bottom: .5rem; /* Space below the image */
+}
+
+.pizza h3 {
+   font-size: 1.5rem;
+   margin-bottom: .25rem; /* Space below the name */
+   color: #2980b9; /* Bright blue color for pizza names to match header theme */
+}
+
+.pizza p {
+   margin: .25rem 0;
+   text-align: center; /* Center align ingredients and price text */
+   color: #7f8c8d; /* Muted grey for ingredients and price for contrast without overwhelming brightness */
+}
+
+/* Order Button Styles */
+.btn {
+   background-color: #27ae60; /* Fresh green button color for a modern look */
+   color: white; /* White text color for contrast against green button */
+   border-radius: .5rem; /* Rounded corners for button */
+   padding: .75rem 1.5rem; /* Padding inside the button */
+   border: none;
+   cursor: pointer;
+   transition: background-color .3s ease, transform .2s ease;
+}
+
+.btn:hover {
+   background-color: #219653; /* Darker green on hover for emphasis */
+}
+
+/* Footer Styles */
+.footer {
+   text-align: center;
+   padding:.5rem;
+   background-color:#ffffff;
+}
